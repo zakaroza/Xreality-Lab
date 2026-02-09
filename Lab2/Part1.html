@@ -5,25 +5,6 @@
         <a-marker preset="hiro">
             <a-box position='0 0.5 0' material='color: yellow;'></a-box>
         </a-marker>
-        
+        <a-entity camera></a-entity>
     </a-scene>
-    <a-assets>
-        <!-- Put your model in a folder like models/ and change the filename -->
-        <a-asset-item id="model" src="models/scene.bin"></a-asset-item>
-    </a-assets>
-
-    <!-- HIRO marker: glTF model instead of yellow cube -->
-    <a-marker preset="hiro">
-        <a-gltf-model src="#model"
-                      position="0 0 0"
-                      rotation="0 0 0"
-                      scale="0.5 0.5 0.5"></a-gltf-model>
-    </a-marker>
-
-    <!-- KANJI marker: red cube -->
-    <a-marker preset="kanji">
-        <a-box position="0 0.5 0" material="color: red;"></a-box>
-    </a-marker>
-
-    <a-entity camera></a-entity>
 </body>
